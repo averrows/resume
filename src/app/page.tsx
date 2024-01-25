@@ -9,10 +9,15 @@ import { Header } from 'src/components/Header/Header';
 
 const Page: React.FC<PageProps> = () => {
   return (
-    <>
+    <main>
       <Header />
 
-      <div className="container">
+      <div
+        className="container"
+        style={{
+          minHeight: 'calc(100vh - 100px)',
+        }}
+      >
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           <AboutMe />
           <ContactInformation />
@@ -34,9 +39,14 @@ const Page: React.FC<PageProps> = () => {
           <AdditionalInfo />
         </div> */}
       </div>
-
-      <Footer />
-    </>
+      <div
+        style={{
+          height: '100px',
+        }}
+      >
+        <Footer />
+      </div>
+    </main>
   );
 };
 
