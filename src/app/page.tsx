@@ -18,10 +18,10 @@ const Page: React.FC<PageProps> = () => {
           <ContactInformation />
         </div>
 
-        <div className="mt-12">
+        {/* <div className="mt-12">
           <Skills />
         </div>
-
+µ
         <div className="mt-12">
           <Professional />
         </div>
@@ -32,7 +32,7 @@ const Page: React.FC<PageProps> = () => {
 
         <div className="mt-12">
           <AdditionalInfo />
-        </div>
+        </div> */}
       </div>
 
       <Footer />

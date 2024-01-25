@@ -10,7 +10,9 @@ interface PDFDownloadButtonProps {
 const PDFDownloadButton: React.FC<PDFDownloadButtonProps> = ({ secret }) => {
   return (
     <ButtonLink
-      href={secret ? `/api/pdf?secret=${secret}` : '/api/pdf'}
+      href={
+        'https://drive.usercontent.google.com/download?id=1SwhAazbHVdVJ-9zXB9C3cEO57ch5C-nV&export=download&authuser=0'
+      }
       size="lg"
     >
       <FontAwesomeIcon icon={faFilePdf} size="lg" />
