@@ -15,12 +15,7 @@ const Skills: React.FC = () => {
         {allSkills.map((skill, skillIndex) => (
           <div key={skill._id}>
             <Heading level={4}>
-              <div className="flex items-center gap-2">
-                <StarRating
-                  stars={(allSkills.length - skillIndex) as 1 | 2 | 3}
-                />
-                {skill.title}
-              </div>
+              <div className="flex items-center gap-2">{skill.title}</div>
             </Heading>
 
             <Prose className="text-neutral-11" html={skill.body.html} />
